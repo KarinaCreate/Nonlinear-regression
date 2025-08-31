@@ -7,12 +7,14 @@ from scipy import optimize
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
+import requests
+from io import BytesIO
 
 # 2. Чтение файлов, анализ данных
 
 # Чтение файлов
-train = pd.read_csv('C:\\Users\\user\\Desktop\\Nonlinear regression\\train.csv')
-k_test = pd.read_csv('C:\\Users\\user\\Desktop\\Nonlinear regression\\test.csv')
+train = pd.read_csv('https://raw.githubusercontent.com/KarinaCreate/Nonlinear-regression/refs/heads/master/train.csv')
+k_test = pd.read_csv('https://raw.githubusercontent.com/KarinaCreate/Nonlinear-regression/refs/heads/master/test.csv')
 
 train.head(100) #проверка корректности показа данных
 train.shape #проверка размерности данных
