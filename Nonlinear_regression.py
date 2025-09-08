@@ -98,4 +98,6 @@ k.plot(kind='scatter', x='k', y='x', alpha=0.7, color='red', label='test', ax=ax
 plt.title("Prediction")
 plt.grid()
 plt.legend()
+plt.savefig('C:/Users/user/Desktop/ax.jpg')
 plt.show()
+
